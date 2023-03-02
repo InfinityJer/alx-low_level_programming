@@ -13,4 +13,3 @@ num = rand();
 printf("%i\n", num);
 return (0);
 }
-
