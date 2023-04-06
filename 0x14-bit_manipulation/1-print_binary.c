@@ -1,6 +1,6 @@
 /*
  * File: 1-print_binary.c
- * Author: Oghenekparobo Onosemuode
+ * Author: Kuria Jeremiah
  */
 
 #include "main.h"
