@@ -1,6 +1,20 @@
 #!/usr/bin/python3
 
+"""
+Module: 5-island_perimeter.py
+This module contains the island_perimeter function.
+"""
+
 def island_perimeter(grid):
+    """
+    Calculate the perimeter of the island described in grid.
+
+    Args:
+        grid (list of list of int): The grid representing the island.
+
+    Returns:
+        int: The perimeter of the island.
+    """
     perimeter = 0
 
     for i in range(len(grid)):
@@ -15,3 +29,4 @@ def island_perimeter(grid):
                     perimeter -= 2
 
     return perimeter
+
