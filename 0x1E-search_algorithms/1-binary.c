@@ -10,12 +10,12 @@
  */
 void print_array(int *array, size_t low, size_t high)
 {
-    size_t i;
+	size_t i;
 
-    printf("Searching in array: ");
-    for (i = low; i < high; i++)
-        printf("%d, ", array[i]);
-    printf("%d\n", array[i]);
+	printf("Searching in array: ");
+	for (i = low; i < high; i++)
+		printf("%d, ", array[i]);
+	printf("%d\n", array[i]);
 }
 
 /**
@@ -33,18 +33,18 @@ void print_array(int *array, size_t low, size_t high)
  */
 int recursive_search_binary(int *array, size_t low, size_t high, int value)
 {
-    size_t mid;
+	size_t mid;
 
-    if (high < low)
-        return (-1);
+	if (high < low)
+		return (-1);
 
-    print_array(array, low, high);
-    mid = low + (high - low) / 2;
-    if (array[mid] == value)
-        return (mid);
-    if (array[mid] > value)
-        return (recursive_search_binary(array, low, mid - 1, value));
-    return (recursive_search_binary(array, mid + 1, high, value));
+	print_array(array, low, high);
+	mid = low + (high - low) / 2;
+	if (array[mid] == value)
+		return (mid);
+	if (array[mid] > value)
+		return (recursive_search_binary(array, low, mid - 1, value));
+	return (recursive_search_binary(array, mid + 1, high, value));
 }
 
 /**
@@ -59,8 +59,8 @@ int recursive_search_binary(int *array, size_t low, size_t high, int value)
  */
 int binary_search(int *array, size_t size, int value)
 {
-    if (array == NULL)
-        return (-1);
+	if (array == NULL)
+		return (-1);
 
-    return (recursive_search_binary(array, 0, size - 1, value));
+	return (recursive_search_binary(array, 0, size - 1, value));
 }
