@@ -1,13 +1,18 @@
 #include "search_algos.h"
 
 /**
- * rec_search - Recursive binary search function.
- * @array: A pointer to the first element of the array to search in.
- * @size: The number of elements in the array.
- * @value: The value to search for.
- *
- * Return: The index where value is located, or -1 if not found.
- */
+  * advanced_binary_recursive - Searches recursively for a value in a sorted
+  *                             array of integers using binary search.
+  * @array: A pointer to the first element of the [sub]array to search.
+  * @left: The starting index of the [sub]array to search.
+  * @right: The ending index of the [sub]array to search.
+  * @value: The value to search for.
+  *
+  * Return: If the value is not present, -1.
+  *         Otherwise, the index where the value is located.
+  *
+  * Description: Prints the [sub]array being searched after each change.
+  */
 int rec_search(int *array, size_t size, int value)
 {
 	size_t half = size / 2;
