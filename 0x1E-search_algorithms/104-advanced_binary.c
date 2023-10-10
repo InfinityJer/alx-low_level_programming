@@ -1,10 +1,9 @@
 #include "search_algos.h"
 
 /**
- * advanced_binary_recursive - Recursive binary search function.
+ * rec_search - Recursive binary search function.
  * @array: A pointer to the first element of the array to search in.
- * @low: The starting index of the sub-array to search.
- * @high: The ending index of the sub-array to search.
+ * @size: The number of elements in the array.
  * @value: The value to search for.
  *
  * Return: The index where value is located, or -1 if not found.
@@ -42,13 +41,11 @@ int rec_search(int *array, size_t size, int value)
 }
 
 /**
- * advanced_binary - calls to rec_search to return
- * the index of the number
- *
- * @array: input array
- * @size: size of the array
- * @value: value to search in
- * Return: index of the number
+ * advanced_binary - Calls rec_search to return the index of the number.
+ * @array: Input array.
+ * @size: Size of the array.
+ * @value: Value to search for.
+ * Return: Index of the number, or -1 if not found.
  */
 int advanced_binary(int *array, size_t size, int value)
 {
