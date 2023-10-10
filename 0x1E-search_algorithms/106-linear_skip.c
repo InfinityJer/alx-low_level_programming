@@ -6,6 +6,8 @@
  * @value: The value to search for.
  *
  * Return: A pointer to the first node where value is located, or NULL if not found.
+ * Description: Prints a value every time it is compared in the list.
+ *              Uses the square root of the list size as the jump step.
  */
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
