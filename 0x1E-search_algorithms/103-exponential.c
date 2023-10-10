@@ -1,15 +1,15 @@
 #include "search_algos.h"
-
 /**
- * binary_search - Searches for a value in a sorted array of integers
- *                 using the Binary Search Algorithm.
- * @array: A pointer to the first element of the array to search in.
- * @low: The starting index of the sub-array to search.
- * @high: The ending index of the sub-array to search.
- * @value: The value to search for.
+ * b_search - function that searches for a value in a sorted
+ * array of integers using the Binary search algorithm
  *
- * Return: If the value is not present or the array is NULL, -1.
- *         Otherwise, the index where the value is located.
+ * @array: Array is a pointer to the first element of the array to search in
+ * @low: Left index in the array
+ * @high: right index in the array
+ * @value: Value to search for in the array
+ *
+ * Return: The first index where value is located
+ * or -1 if value is not found or if array is NULL
  */
 int _binary_search(int *array, size_t left, size_t right, int value)
 {
