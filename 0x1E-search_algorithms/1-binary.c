@@ -6,7 +6,7 @@
  * @low: The starting index of the array to print.
  * @high: The ending index of the array to print.
  *
- * Description: This function prints the sub-array being searched after each change.
+ * Description: Prints the sub-array being searched after each change.
  */
 void print_array(int *array, size_t low, size_t high)
 {
